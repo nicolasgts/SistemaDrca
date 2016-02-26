@@ -1,0 +1,108 @@
+
+<html>
+
+    <head>
+        <title>Sistema Drca</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+
+    </head>
+
+    <body>
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+                          <!-- Always shows a header, even in smaller screens. -->
+                    <header class="mdl-layout__header">
+                      <div class="mdl-layout__header-row">
+                        <!-- Title -->
+                        <span class="mdl-layout-title "><a   class="mdl-navigation__link" href="/"><h4>Sistema Drca</h4> </a></span>
+                        <!-- Add spacer, to align navigation to the right -->
+                        <div class="mdl-layout-spacer"></div>
+                        <!-- Navigation. We hide it in small screens. -->
+                        <nav class="mdl-navigation mdl-layout--large-screen-only">
+                          <a class="mdl-navigation__link" href="/departamentos">Departamentos</a>
+                          <a class="mdl-navigation__link" href="/disciplinas">Disciplinas</a>
+                          <a class="mdl-navigation__link" href="/alunos">Alunos</a>
+                        </nav>
+                      </div>
+                    </header>
+                    <div class="mdl-layout__drawer">
+                      <span class="mdl-layout-title"> <a  class="mdl-navigation__link" href="/"><h4>Sistema Drca</h4> </a></span>
+                      <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link" href="/departamentos">Departamentos</a>
+                        <a class="mdl-navigation__link" href="/disciplinas">Disciplinas</a>
+                        <a class="mdl-navigation__link" href="/alunos">Alunos</a>
+                      </nav>
+                    </div>
+
+
+        <main class="mdl-layout__content" style=" background: rgba(0, 0, 0, 0.10); margin-right: 50px; margin-left: 50px;">
+             <div class="page-content" style="margin-top: 150px;">
+                 <center>
+
+                   {%block conteudo%}
+
+                   {%endblock%}
+                </center>
+             </div>
+        </main>
+
+
+
+        <footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Features</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Updates</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Details</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Specs</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Technology</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Patterns</a></li>
+        <li><a href="#">Usage</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contracts</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Questions</a></li>
+        <li><a href="#">Answers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</footer>
+    </div>
+
+
+    </body>
+
+</html>

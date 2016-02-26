@@ -1,0 +1,38 @@
+{% extends "base.html"%}
+{%block conteudo%}
+
+
+
+                        <table class="mdl-data-table mdl-js-data-table  mdl-shadow--4dp">
+                          <thead>
+                            <tr>
+                                <th  >Matricula</th>
+                                <th class="mdl-data-table__cell--non-numeric">Nome</th>
+                                <th class="mdl-data-table__cell--non-numeric">Curso</th>
+                                <th>Abrir</th>
+                                <th>Matricular</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                           {% for aluno in alunos %}
+                            <tr>
+                                <th >{{aluno.matricula}}</th>
+                                <th class="mdl-data-table__cell--non-numeric">{{aluno.nome}}</th>
+                                <th class="mdl-data-table__cell--non-numeric">{{aluno.curso}}</th>
+                                <th>
+                                      <div id="tt2" class="icon material-icons">cloud_upload</div>
+                                        <div class="mdl-tooltip" for="tt2">Abrir</div>
+
+
+                                </th>
+                                <th>
+                                      <div id="tt1" class="icon material-icons">add</div>
+                                        <div class="mdl-tooltip" for="tt1">MAtricular</div>
+
+                                </th>
+
+                            </tr>
+                          {% endfor%}
+                          </tbody>
+                        </table>
+{%endblock%}

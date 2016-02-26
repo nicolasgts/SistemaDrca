@@ -47,7 +47,7 @@ class Disciplina(models.Model):
     obr_let = models.TextField()
     status = models.TextField()
     credito = models.ForeignKey(Credito)
-    disc_pre = models.ManyToManyField('Disciplina')
+    disc_pre = models.ManyToManyField('Disciplina', blank = True)
     curso = models.ForeignKey(Curso, null = True)
     professor = models.ForeignKey(Professor)
     
